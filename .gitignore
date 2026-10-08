@@ -1,0 +1,21 @@
+# Secretos
+.env
+config.local.php
+
+# Datos generados en ejecución
+*.log
+rate_limit_data/*.json
+conocimiento_data/*.jsonl
+conocimiento_data/entrenamiento_ya_preguntadas.json
+conocimiento_data/.guardado.lock
+conocimiento_data.entrenamiento_ultima_corrida
+imagenes_generadas/*
+archivos_data/*
+!*/.htaccess
+!*/.gitkeep
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,9 @@
+# Bloquear todo acceso directo a esta carpeta: solo el propio PHP
+# (via file_get_contents en el servidor) debe leer estos archivos.
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>

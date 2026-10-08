@@ -1,0 +1,10 @@
+# Bloquear todo acceso directo a esta carpeta: el front-end solo
+# consume estos datos vía buscar.php / estado.php (con login), nunca
+# haciendo fetch directo a los .json.
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
